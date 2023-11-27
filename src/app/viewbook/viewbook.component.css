@@ -1,0 +1,61 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .book-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    height: 350px; /* Set the desired height */
+  width: 250px;
+  }
+  .button-container {
+    display: flex;
+  }
+  
+  .view-button,
+  .update-button,
+  .delete-button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .view-button {
+    background-color: #007bff; /* Change colors as needed */
+  }
+  
+  .update-button {
+    background-color: #28a745;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+  }
+
+  .add-book-button {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #3498db; /* Example color */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Add any other styles you need for this button */
+  }
+  

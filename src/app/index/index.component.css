@@ -1,0 +1,21 @@
+.hero-section {
+    position: relative;
+    height: 100vh; /* Adjust as needed */
+    background-image: url('https://media.istockphoto.com/id/949118068/photo/books.jpg?s=612x612&w=0&k=20&c=1vbRHaA_aOl9tLIy6P2UANqQ27KQ_gSF-BH0sUjQ730=');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-quote {
+    position: absolute;
+    top: 20px; /* Adjust distance from top */
+    left: 20px; /* Adjust distance from left */
+    padding: 15px;
+    background-color: rgba(247, 184, 168, 0.7); /* Adjust opacity (last value) as needed */
+    color: #333; /* Text color */
+    font-size: 2em; /* Adjust font size as needed */
+    width: 80%; /* Adjust width as needed */
+    max-width: 500px; /* Set a max-width if required */
+    border-radius: 8px; /* Rounded corners */
+  }
+  

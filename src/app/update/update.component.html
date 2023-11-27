@@ -1,0 +1,28 @@
+<div>
+    
+    <form (ngSubmit)="onSubmit()">
+      <label>Title:</label>
+      <input type="text" [formControl]="titleControl">
+   
+      <label>Author:</label>
+      <input type="text" [formControl]="authorControl">
+   
+      <label>Description:</label>
+      <textarea [formControl]="descriptionControl"></textarea>
+   
+      <label>Image URL:</label>
+      <input type="text" [formControl]="bookingControl">
+   
+      <label>Genre:</label>
+      <input type="text" [formControl]="genreControl">
+   
+      <label>ISBN:</label>
+      <input type="number" [formControl]="isbnControl">
+   
+      <label>Publish Date:</label>
+      <input type="date" [formControl]="publishdateControl">
+   
+      <button type="submit">Update Book</button>
+    </form>
+  </div>
+   

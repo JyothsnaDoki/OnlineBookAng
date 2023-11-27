@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark navbar-expand-md bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand navbar_title" routerLink="">OnlineBookManagement</a>
+        <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto"> <!-- Utilizing ml-auto to align items to the right -->
+                <li [hidden]="IsLoggedIn" class="nav-item">
+                    <a class="nav-link active navbar_login" routerLink="/login">Login</a>
+                </li>
+                <li [hidden]="IsLoggedIn" class="nav-item">
+                    <a class="nav-link active navbar_signup" routerLink="/signup">Signup</a>
+                </li>
+                <li [hidden]="!IsLoggedIn" class="nav-item">
+                    <a class="nav-link active navbar_login" routerLink="/profile/{{id}}">Profile</a>
+                </li> 
+                <li [hidden]="!IsLoggedIn" class="nav-item">
+                    <a class="nav-link navbar_logout" (click)="Logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

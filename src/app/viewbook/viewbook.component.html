@@ -1,0 +1,19 @@
+<button class="add-book-button" routerLink="/addbook">Add Book</button>
+<p></p>
+<div class="card-container">
+  <div class="card" *ngFor="let book of books">
+    <img [src]="book.booking" alt="{{ book.title }} Image" class="book-image">
+    <h3>{{ book.title }}</h3>
+    <p>Author: {{ book.author }}</p>
+    <p>Genre: {{ book.genre }}</p>
+    <p>Published Year: {{ book.publishdate }}</p>
+
+    <!-- Buttons with router links for view, update, delete -->
+    <div class="button-container">
+      <!-- <button class="view-button" [routerLink]="['/view', book.id]">View</button> -->
+      <button class="update-button" [routerLink]="['/update',book.bookid]">Update</button>
+      <button class="delete-button" (click)="deleteBook(book.bookid)">Delete</button>
+      
+    </div>
+  </div>
+</div>

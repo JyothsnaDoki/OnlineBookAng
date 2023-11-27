@@ -1,0 +1,36 @@
+<!-- <div class="login-container">
+    <div class="login-image">
+      <img src="https://www.edusys.co/images/library.png" alt="Login Image">
+    </div>
+    <div class="login-form">
+      <form [formGroup]="loginForm" >
+        <input placeholder="Enter your email" class="custom-input" formControlName="email">
+        <br>
+        <input placeholder="Enter your password" type="password" class="custom-input" formControlName="password">
+        <br>
+        <button type="submit" (click)="Login()" class="custom-button">Submit</button>
+        <a class="forgot-password" routerLink="/signup">New User ?</a>
+      </form>
+    </div>
+  </div>
+   -->
+
+
+   <div class="login-container">
+  <div class="login-image">
+    <img src="https://www.edusys.co/images/library.png" alt="Login Image">
+  </div>
+  <div class="login-form">
+    <form [formGroup]="loginForm" >
+      <label for="email">Email:</label>
+      <input placeholder="Enter your email" id="email" class="custom-input" formControlName="email">
+      
+      <br>
+      <label for="password">Password:</label>
+      <input placeholder="Enter your password" type="password" id="password" class="custom-input" formControlName="password">
+      <br>
+      <button type="submit" (click)="Login()" class="custom-button">Submit</button>
+      <a class="forgot-password" routerLink="/signup">New User ?</a>
+    </form>
+  </div>
+</div>
